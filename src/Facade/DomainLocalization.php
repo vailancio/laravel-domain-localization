@@ -1,4 +1,4 @@
-<?php namespace Kevindierkx\LaravelDomainLocalization\Facade;
+<?php namespace Vailancio\LaravelDomainLocalization\Facade;
 
 use Illuminate\Support\Facades\Facade;
 

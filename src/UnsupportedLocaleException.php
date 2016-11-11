@@ -1,4 +1,4 @@
-<?php namespace Kevindierkx\LaravelDomainLocalization;
+<?php namespace Vailancio\LaravelDomainLocalization;
 
 use Exception;
 

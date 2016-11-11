@@ -1,20 +1,20 @@
 {
-    "name": "kevindierkx/laravel-domain-localization",
+    "name": "vailancio/laravel-domain-localization",
     "description": "Laravel domain localization",
-    "keywords": ["kevindierkx", "domain", "localization"],
+    "keywords": ["vailancio", "domain", "localization"],
     "authors": [
         {
-            "name": "Kevin Dierkx",
-            "email": "contact@kevindierkx.com"
+            "name": "Vailancio Rodrigues",
+            "email": "vailancio248@gmail.com"
         }
     ],
     "require": {
         "php": ">=5.4.0",
-        "illuminate/support": "4.2.*"
+        "illuminate/support": "5.1.*"
     },
     "autoload": {
         "psr-4": {
-            "Kevindierkx\\LaravelDomainLocalization\\": "src/"
+            "Vailancio\\LaravelDomainLocalization\\": "src/"
         }
     },
     "minimum-stability": "stable"

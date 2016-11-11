@@ -1,4 +1,4 @@
-<?php namespace Kevindierkx\LaravelDomainLocalization;
+<?php namespace Vailancio\LaravelDomainLocalization;
 
 use Illuminate\Config\Repository;
 use Illuminate\Foundation\Application;
@@ -37,7 +37,7 @@ class DomainLocalization
      * @param  \Illuminate\Config\Repository       $configRepository
      * @param  \Illuminate\Http\Request            $request
      * @param  \Illuminate\Foundation\Application  $app
-     * @throws \Kevindierkx\LaravelDomainLocalization\UnsupportedLocaleException
+     * @throws \Vailancio\LaravelDomainLocalization\UnsupportedLocaleException
      */
     public function __construct(
         Repository $configRepository,
@@ -178,7 +178,7 @@ class DomainLocalization
      * Returns the current URL adapted to $locale.
      *
      * @param  string  $locale
-     * @throws \Kevindierkx\LaravelDomainLocalization\UnsupportedLocaleException
+     * @throws \Vailancio\LaravelDomainLocalization\UnsupportedLocaleException
      * @return string
      */
     public function getLocalizedUrl($locale)
@@ -303,7 +303,7 @@ class DomainLocalization
      * Validate the locale exists in the supported locales array.
      *
      * @param  string  $locale
-     * @throws \Kevindierkx\LaravelDomainLocalization\UnsupportedLocaleException
+     * @throws \Vailancio\LaravelDomainLocalization\UnsupportedLocaleException
      */
     protected function validateLocale($locale)
     {

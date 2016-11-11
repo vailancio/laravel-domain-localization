@@ -13,14 +13,14 @@ You must modify your `composer.json` file and run `composer update` to include t
 
 ```json
 "require": {
-    "kevindierkx/laravel-domain-localization": "1.0.*"
+    "vailancio/laravel-domain-localization": "1.0.*"
 }
 ```
 
 Or you can run the `composer require` command from your terminal:
 
 ```
-composer require kevindierkx/laravel-domain-localization:1.0.x
+composer require vailancio/laravel-domain-localization:1.0.x
 ```
 
 ### Service provider
@@ -28,14 +28,14 @@ Open `app/config/app.php` and register the required service provider.
 
 ```php
 'providers' => [
-    'Kevindierkx\LaravelDomainLocalization\Provider\Laravel4ServiceProvider',
+    'Vailancio\LaravelDomainLocalization\Provider\Laravel4ServiceProvider',
 ]
 ```
 
 If you'd like to make configuration changes in the configuration file you can publish it with the following Artisan command:
 
 ```
-php artisan vendor:publish --provider="Kevindierkx\LaravelDomainLocalization\Provider\Laravel4ServiceProvider"
+php artisan vendor:publish --provider="Vailancio\LaravelDomainLocalization\Provider\Laravel4ServiceProvider"
 ```
 
 ### Facade
@@ -43,7 +43,7 @@ The facade is used for easy access to the domain localization helper. If you wou
 
 ```php
 'aliases' => [
-    'Localization' => 'Kevindierkx\LaravelDomainLocalization\Facade\DomainLocalization',
+    'Localization' => 'Vailancio\LaravelDomainLocalization\Facade\DomainLocalization',
 ]
 ```
 
@@ -74,7 +74,7 @@ http://example.nl
 If the locale is not defined in `supported_locales`, the system will use the application default locale.
 
 ## Helpers
-The package provides some useful helper functions. For a full list of methods and method descriptions please refer to the [DomainLocalization class](https://github.com/kevindierkx/laravel-domain-localization/blob/master/src/DomainLocalization.php).
+The package provides some useful helper functions. For a full list of methods and method descriptions please refer to the [DomainLocalization class](https://github.com/vailancio/laravel-domain-localization/blob/master/src/DomainLocalization.php).
 
 ### Get current URL for a specified locale
 Uses the current URL to create a localized URL using the tld value from the config.
@@ -193,4 +193,4 @@ Using the helper methods we can create a simple but effective language switcher.
 ```
 
 ## License
-The MIT License (MIT). Please see [License File](https://github.com/kevindierkx/laravel-domain-localization/blob/master/LICENSE) for more information.
+The MIT License (MIT). Please see [License File](https://github.com/vailancio/laravel-domain-localization/blob/master/LICENSE) for more information.

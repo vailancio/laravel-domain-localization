@@ -1,7 +1,7 @@
-<?php namespace Kevindierkx\LaravelDomainLocalization\Provider;
+<?php namespace Vailancio\LaravelDomainLocalization\Provider;
 
 use Illuminate\Support\ServiceProvider;
-use Kevindierkx\LaravelDomainLocalization\DomainLocalization;
+use Vailancio\LaravelDomainLocalization\DomainLocalization;
 
 class Laravel4ServiceProvider extends ServiceProvider
 {
@@ -10,7 +10,7 @@ class Laravel4ServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->package('kevindierkx/laravel-domain-localization', 'laravel-domain-localization', __DIR__ . '/..');
+        $this->package('vailancio/laravel-domain-localization', 'laravel-domain-localization', __DIR__ . '/..');
     }
 
     /**
